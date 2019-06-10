@@ -1,7 +1,9 @@
 <h1>期中影片</h1>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/0IoCMM3iR8g" width="560"></iframe></p><h1>網路連線設定</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/0IoCMM3iR8g" width="560"></iframe></p>
+<h1>網路連線設定</h1>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/mBNL7XV1Gq4" width="560"></iframe></p>
-<p><span>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.</span></p><h1>配置可攜程式環境</h1>
+<p><span>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.</span></p>
+<h1>配置可攜程式環境</h1>
 <p><span>取得 Windows 10 64 位元環境下的可攜程式環境 </span><span>(</span><a href="https://drive.google.com/file/d/1_TQBw1PM7jxrmtsBjvLKbjJWfGs8Ug79/view">下載  2019_cdb_w5.7z</a><span>), 下載後解開目錄, 放入 USB3.0 規格以上的隨身碟或隨身硬碟.</span></p>
 <p>開啟start.bat即可以開啟隨身系統，以開啟stop.bat結束隨身系統</p>
 <p>Y:  即切換至Y槽</p>
@@ -11,23 +13,29 @@
 <p><span>dir   列出目前所在目錄的內容</span></p>
 <p><span>mkdir  在所在位置建立目錄</span></p>
 <p>cls  <span>清除目前的命令列顯示的內容</span></p>
-<p></p><h1>建立Git倉儲</h1>
+<p></p>
+<h1>建立Git倉儲</h1>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/9xdKNc7-CeI" width="560"></iframe></p>
 <p><span>建立 Git 倉儲, 共分為兩類</span></p>
 <p><span>(1)  直接在 Github 網際介面下建立倉儲時, 要求建立 README.md 檔案, 之後可以直接在近端, 以 git clone 加上倉儲連線 URL, 將倉儲克隆一份到近端, 並以最新版本作為工作目錄, 使用者改版後, 可以直接透過 git add, commit 與 push 對遠端倉儲改版</span></p>
 <p><span><img alt="" src="https://mdecp2018.github.io/site-s40723123/images/create%20repository(with%20README).JPG" width="650"/></span></p>
 <p><span>(2)  在 Github 網際介面下建立倉儲時, 不要建立任何檔案, 而是在近端自行利用 git 指令建立倉儲架構, 新增內容後, 以 git remote add 設法在近端倉儲中納入 origin URL 後, 將近端倉儲版本新增提交推送到遠端</span></p>
 <p><span><img alt="" height="483" src="https://mdecp2018.github.io/site-s40723123/images/create%20repository.JPG" width="644"/></span></p>
-<p><span><img alt="" height="395" src="https://mdecp2018.github.io/site-s40723123/images/create%20repository(set%20by%20self).JPG" width="650"/></span></p><h1>Git指令</h1>
+<p><span><img alt="" height="395" src="https://mdecp2018.github.io/site-s40723123/images/create%20repository(set%20by%20self).JPG" width="650"/></span></p>
+<h1>Git指令</h1>
 <p><strong>git add<span> </span></strong><span>可以用來新增一個檔案, 數個檔案, 或在之前提交後所新增的所有內容</span></p>
 <p><span><strong>git commit<span> </span></strong>可以將剛剛add新增之檔案提交至遠端，在執行前須先使用 git config 建立臨時或永久的身分註記, 因為 GIT 在展開所有改版內容時, 必須明確登錄這些變更的作者與時間.<br/></span></p>
 <p><span>  (1)git commit -m "改版之標題"</span></p>
 <p><strong>git push</strong><span> </span>可以將先前改變之內容提交至指定之遠端倉儲</p>
-<p><strong>git pull</strong>   將近端改版至遠端之最新版本</p><h1>建立Github Pages</h1>
+<p><strong>git pull</strong>   將近端改版至遠端之最新版本</p>
+<p><strong>git status  </strong>查看是否有更新的版本</p>
+<h1>建立Github Pages</h1>
 <p><span>自行建立靜態內容管理網站</span></p>
 <p>利用 CMSimfly (<a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly)</a>內容,，將其clone至可攜系統，並利用啟動近端來編輯內容改版使遠端內容更新</p>
-<p><img alt="" height="386" src="https://mdecp2018.github.io/site-s40723123/images/clone%20URL.JPG" width="650"/></p><h1>管理網站內容</h1>
-<h1>測試</h1>
+<p><img alt="" height="386" src="https://mdecp2018.github.io/site-s40723123/images/clone%20URL.JPG" width="650"/></p>
+<h1>管理網站內容</h1>
+<h1>Javascript</h1>
+<h2>first</h2>
 <p><button onclick="myFunction()">Try it</button></p>
 <p id="demo"></p>
 <pre class="brush: py">
@@ -192,341 +200,407 @@ function draw2mid() {
 </p>
 <p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas> <br/> <button onclick="throwdice();">Throw dice </button></p>
 <form id="f" name="f">Stage: <input name="stage" type="text" value="First Throw"/> Point: <input name="pv" type="text" value="   "/> Outcome: <input name="outcome" type="text" value="     "/></form>
-<h1>測試-2</h1>
-<p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas></p>
-<script>// <![CDATA[
-canvas = document.getElementById("canvas");
-ctx = canvas.getContext('2d');
-
-function draw(){
- ctx.beginPath();
- ctx.strokeStyle = "rgb(200,0,0)";
- ctx.arc(200, 200,50,0,2*Math.PI, false);
- ctx.stroke();
-}
-
-function clear_canvas(){
-// Store the current transformation matrix
-ctx.save();
-
-// Use the identity matrix while clearing the canvas
-ctx.setTransform(1, 0, 0, 1, 0, 0);
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-// Restore the transform
-ctx.restore();
-}
-// ]]></script>
-<p><button onclick="draw()">繪圖</button> <button onclick="clear_canvas()">清除</button></p>
-<h1>國旗</h1>
-<p>使用 <a href="https://brython.info/">Brython</a> 繪圖:</p>
-<!-- 導入 Brython 標準程式庫 -->
+<h2>canvas</h2>
+<p><br/><button onclick="draw()">繪圖</button><span style="font-family: Lato; font-size: 14px;"> </span><button onclick="clear_canvas()">清除</button></p>
+<h2>國旗</h2>
+<!-- for Brython -->
 <script src="/get_page/static/brython.js"></script>
 <script src="/get_page/static/brython_stdlib.js"></script>
-<p></p>
-<!-- 啟動 Brython -->
+<!-- 啟動 brython() -->
+<p>
 <script>// <![CDATA[
 window.onload=function(){
-// 設定 data/py 為共用程式路徑
-brython({debug:1, pythonpath:['./../data/py']});
+brython(1);
 }
 // ]]></script>
+</p>
+<!-- 以下利用 Brython 程式執行繪圖 -->
+<p><canvas height="400" id="taiwan_flag" width="600"></canvas></p>
+<p>
+<script type="text/python3">// <![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+   
+# 準備繪圖畫布
+canvas = doc["taiwan_flag"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/4
+circle_y = flag_h/4
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫青天
+ctx.fillStyle='rgb(0, 0, 150)'
+ctx.fillRect(0,0,flag_w/2,flag_h/2)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為藍色
+ctx.fillStyle = 'rgb(0, 0, 149)'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+// ]]></script>
+</p><h2>Spur Gear1</h2>
+<p></p>
 <p><canvas height="600" id="onegear" width="800"></canvas></p>
 <p></p>
-<!-- 以下製作 button-->
 <div height="20" id="onegear_div" width="800"></div>
-<p><input id="n" type="text" value="22"/><br/> <button id="button">Set Number of Gears</button></p>
-<!-- 以下實際利用  Brython 繪圖-->
-<script type="text/python3">// <![CDATA[
-from browser import document as doc
-import math
-# deg 為角度轉為徑度的轉換因子
-deg = math.pi/180.
-# 定義 Spur 類別
-class Spur(object):
-    def __init__(self, ctx):
-        self.ctx = ctx
- 
-    def create_line(self, x1, y1, x2, y2, width=3, fill="red"):
-        self.ctx.beginPath()
-        self.ctx.lineWidth = width
-        self.ctx.moveTo(x1, y1)
-        self.ctx.lineTo(x2, y2)
-        self.ctx.strokeStyle = fill
-        self.ctx.stroke()
- 
-    # 定義一個繪正齒輪的繪圖函式
-    # midx 為齒輪圓心 x 座標
-    # midy 為齒輪圓心 y 座標
-    # rp 為節圓半徑, n 為齒數
-    # pa 為壓力角 (deg)
-    # rot 為旋轉角 (deg)
-    # 已經針對 n 大於等於 52 齒時的繪圖錯誤修正, 因為 base circle 與齒根圓大小必須進行判斷
-    def Gear(self, midx, midy, rp, n=20, pa=20, color="black"):
-        # 齒輪漸開線分成 15 線段繪製
-        imax = 15
-        # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
-        self.create_line(midx, midy, midx, midy-rp)
-        # a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數
-        # 模數也就是齒冠大小
-        a=2*rp/n
-        # d 為齒根大小, 為模數的 1.157 或 1.25倍, 這裡採 1.25 倍
-        d=2.5*rp/n
-        # ra 為齒輪的外圍半徑
-        ra=rp+a
-        # rb 則為齒輪的基圓半徑
-        # 基圓為漸開線長齒之基準圓
-        rb=rp*math.cos(pa*deg)
-        # rd 為齒根圓半徑
-        rd=rp-d
-        # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-        # dr 則為基圓到齒頂圓半徑分成 imax 段後的每段半徑增量大小
-        # 將圓弧分成 imax 段來繪製漸開線
-        # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-        if rd>rb:
-            dr = (ra-rd)/imax
-        else:
-            dr=(ra-rb)/imax
-        # tan(pa*deg)-pa*deg 為漸開線函數
-        sigma=math.pi/(2*n)+math.tan(pa*deg)-pa*deg
-        for j in range(n):
-            ang=-2.*j*math.pi/n+sigma
-            ang2=2.*j*math.pi/n+sigma
-            lxd=midx+rd*math.sin(ang2-2.*math.pi/n)
-            lyd=midy-rd*math.cos(ang2-2.*math.pi/n)
-            for i in range(imax+1):
-                # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-                if rd>rb:
-                    r=rd+i*dr
-                else:
-                    r=rb+i*dr
-                theta=math.sqrt((r*r)/(rb*rb)-1.)
-                alpha=theta-math.atan(theta)
-                xpt=r*math.sin(alpha-ang)
-                ypt=r*math.cos(alpha-ang)
-                xd=rd*math.sin(-ang)
-                yd=rd*math.cos(-ang)
-                # i=0 時, 繪線起點由齒根圓上的點, 作為起點
-                if(i==0):
-                    last_x = midx+xd
-                    last_y = midy-yd
-                # 由左側齒根圓作為起點, 除第一點 (xd,yd) 齒根圓上的起點外, 其餘的 (xpt,ypt)則為漸開線上的分段點
-                self.create_line((midx+xpt),(midy-ypt),(last_x),(last_y),fill=color)
-                # 最後一點, 則為齒頂圓
-                if(i==imax):
-                    lfx=midx+xpt
-                    lfy=midy-ypt
-                last_x = midx+xpt
-                last_y = midy-ypt
-            # the line from last end of dedendum point to the recent
-            # end of dedendum point
-            # lxd 為齒根圓上的左側 x 座標, lyd 則為 y 座標
-            # 下列為齒根圓上用來近似圓弧的直線
-            self.create_line((lxd),(lyd),(midx+xd),(midy-yd),fill=color)
-            for i in range(imax+1):
-                # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-                if rd>rb:
-                    r=rd+i*dr
-                else:
-                    r=rb+i*dr
-                theta=math.sqrt((r*r)/(rb*rb)-1.)
-                alpha=theta-math.atan(theta)
-                xpt=r*math.sin(ang2-alpha)
-                ypt=r*math.cos(ang2-alpha)
-                xd=rd*math.sin(ang2)
-                yd=rd*math.cos(ang2)
-                # i=0 時, 繪線起點由齒根圓上的點, 作為起點
-                if(i==0):
-                    last_x = midx+xd
-                    last_y = midy-yd
-                # 由右側齒根圓作為起點, 除第一點 (xd,yd) 齒根圓上的起點外, 其餘的 (xpt,ypt)則為漸開線上的分段點
-                self.create_line((midx+xpt),(midy-ypt),(last_x),(last_y),fill=color)
-                # 最後一點, 則為齒頂圓
-                if(i==imax):
-                    rfx=midx+xpt
-                    rfy=midy-ypt
-                last_x = midx+xpt
-                last_y = midy-ypt
-            # lfx 為齒頂圓上的左側 x 座標, lfy 則為 y 座標
-            # 下列為齒頂圓上用來近似圓弧的直線
-            self.create_line(lfx,lfy,rfx,rfy,fill=color)
-canvas = doc['onegear']
-ctx = canvas.getContext("2d")
- 
-# 以 button 驅動的事件函式
-def setgearnumber(e):
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-    x = (canvas.width)/2
-    y = (canvas.height)/2
-    if doc["n"].value.isdigit():
-        n1 = int(doc["n"].value)
-    else:
-        n1= 25
-    # 設定齒輪參數
-    x = (canvas.width)/2
-    y = (canvas.height)/2
-    r = 0.6*(canvas.height/2)
-    pa = 20
-    # 繪出齒輪
-    Spur(ctx).Gear(x, y, r, n1, pa, "blue")
-#判定 button
-setgearnumber(True)
-doc['button'].bind('click',setgearnumber)
-// ]]></script>
-<p>上述正齒輪繪圖程式碼:</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 導入 Brython 標準程式庫 --&gt;
-&lt;script src="./../static/brython.js"&gt;&lt;/script&gt;
-&lt;script src="./../static/brython_stdlib.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;!-- 啟動 Brython --&gt;
-&lt;script&gt;
-window.onload=function(){
-// 設定 data/py 為共用程式路徑
-brython({debug:1, pythonpath:['./../data/py']});
-}
-&lt;/script&gt;
-&lt;p&gt;&lt;canvas height="600" id="onegear" width="800"&gt;&lt;/canvas&gt;&lt;/p&gt;
-&lt;!-- 以下製作 button--&gt;
-&lt;div height="20" id="onegear_div" width="800"&gt;&lt;/div&gt;
-&lt;p&gt;&lt;input id="n" type="text" value="22"&gt;&lt;br&gt; &lt;button id="button"&gt;Set Number of Gears&lt;/button&gt;&lt;/p&gt;
-&lt;!-- 以下實際利用  Brython 繪圖--&gt;
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-import math
-# deg 為角度轉為徑度的轉換因子
-deg = math.pi/180.
-# 定義 Spur 類別
-class Spur(object):
-    def __init__(self, ctx):
-        self.ctx = ctx
- 
-    def create_line(self, x1, y1, x2, y2, width=3, fill="red"):
-        self.ctx.beginPath()
-        self.ctx.lineWidth = width
-        self.ctx.moveTo(x1, y1)
-        self.ctx.lineTo(x2, y2)
-        self.ctx.strokeStyle = fill
-        self.ctx.stroke()
- 
-    # 定義一個繪正齒輪的繪圖函式
-    # midx 為齒輪圓心 x 座標
-    # midy 為齒輪圓心 y 座標
-    # rp 為節圓半徑, n 為齒數
-    # pa 為壓力角 (deg)
-    # rot 為旋轉角 (deg)
-    # 已經針對 n 大於等於 52 齒時的繪圖錯誤修正, 因為 base circle 與齒根圓大小必須進行判斷
-    def Gear(self, midx, midy, rp, n=20, pa=20, color="black"):
-        # 齒輪漸開線分成 15 線段繪製
-        imax = 15
-        # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
-        self.create_line(midx, midy, midx, midy-rp)
-        # a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數
-        # 模數也就是齒冠大小
-        a=2*rp/n
-        # d 為齒根大小, 為模數的 1.157 或 1.25倍, 這裡採 1.25 倍
-        d=2.5*rp/n
-        # ra 為齒輪的外圍半徑
-        ra=rp+a
-        # rb 則為齒輪的基圓半徑
-        # 基圓為漸開線長齒之基準圓
-        rb=rp*math.cos(pa*deg)
-        # rd 為齒根圓半徑
-        rd=rp-d
-        # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-        # dr 則為基圓到齒頂圓半徑分成 imax 段後的每段半徑增量大小
-        # 將圓弧分成 imax 段來繪製漸開線
-        # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-        if rd&gt;rb:
-            dr = (ra-rd)/imax
-        else:
-            dr=(ra-rb)/imax
-        # tan(pa*deg)-pa*deg 為漸開線函數
-        sigma=math.pi/(2*n)+math.tan(pa*deg)-pa*deg
-        for j in range(n):
-            ang=-2.*j*math.pi/n+sigma
-            ang2=2.*j*math.pi/n+sigma
-            lxd=midx+rd*math.sin(ang2-2.*math.pi/n)
-            lyd=midy-rd*math.cos(ang2-2.*math.pi/n)
-            for i in range(imax+1):
-                # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-                if rd&gt;rb:
-                    r=rd+i*dr
-                else:
-                    r=rb+i*dr
-                theta=math.sqrt((r*r)/(rb*rb)-1.)
-                alpha=theta-math.atan(theta)
-                xpt=r*math.sin(alpha-ang)
-                ypt=r*math.cos(alpha-ang)
-                xd=rd*math.sin(-ang)
-                yd=rd*math.cos(-ang)
-                # i=0 時, 繪線起點由齒根圓上的點, 作為起點
-                if(i==0):
-                    last_x = midx+xd
-                    last_y = midy-yd
-                # 由左側齒根圓作為起點, 除第一點 (xd,yd) 齒根圓上的起點外, 其餘的 (xpt,ypt)則為漸開線上的分段點
-                self.create_line((midx+xpt),(midy-ypt),(last_x),(last_y),fill=color)
-                # 最後一點, 則為齒頂圓
-                if(i==imax):
-                    lfx=midx+xpt
-                    lfy=midy-ypt
-                last_x = midx+xpt
-                last_y = midy-ypt
-            # the line from last end of dedendum point to the recent
-            # end of dedendum point
-            # lxd 為齒根圓上的左側 x 座標, lyd 則為 y 座標
-            # 下列為齒根圓上用來近似圓弧的直線
-            self.create_line((lxd),(lyd),(midx+xd),(midy-yd),fill=color)
-            for i in range(imax+1):
-                # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-                if rd&gt;rb:
-                    r=rd+i*dr
-                else:
-                    r=rb+i*dr
-                theta=math.sqrt((r*r)/(rb*rb)-1.)
-                alpha=theta-math.atan(theta)
-                xpt=r*math.sin(ang2-alpha)
-                ypt=r*math.cos(ang2-alpha)
-                xd=rd*math.sin(ang2)
-                yd=rd*math.cos(ang2)
-                # i=0 時, 繪線起點由齒根圓上的點, 作為起點
-                if(i==0):
-                    last_x = midx+xd
-                    last_y = midy-yd
-                # 由右側齒根圓作為起點, 除第一點 (xd,yd) 齒根圓上的起點外, 其餘的 (xpt,ypt)則為漸開線上的分段點
-                self.create_line((midx+xpt),(midy-ypt),(last_x),(last_y),fill=color)
-                # 最後一點, 則為齒頂圓
-                if(i==imax):
-                    rfx=midx+xpt
-                    rfy=midy-ypt
-                last_x = midx+xpt
-                last_y = midy-ypt
-            # lfx 為齒頂圓上的左側 x 座標, lfy 則為 y 座標
-            # 下列為齒頂圓上用來近似圓弧的直線
-            self.create_line(lfx,lfy,rfx,rfy,fill=color)
-canvas = doc['onegear']
-ctx = canvas.getContext("2d")
- 
-# 以 button 驅動的事件函式
-def setgearnumber(e):
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-    x = (canvas.width)/2
-    y = (canvas.height)/2
-    if doc["n"].value.isdigit():
-        n1 = int(doc["n"].value)
-    else:
-        n1= 25
-    # 設定齒輪參數
-    x = (canvas.width)/2
-    y = (canvas.height)/2
-    r = 0.6*(canvas.height/2)
-    pa = 20
-    # 繪出齒輪
-    Spur(ctx).Gear(x, y, r, n1, pa, "blue")
-#判定 button
-setgearnumber(True)
-doc['button'].bind('click',setgearnumber)
-&lt;/script&gt;</pre>
-<p><strong></strong></p>
-<h1>架設虛擬主機</h1>
+<p><input id="n" type="text" value="22"/><br/><button id="button">Set Number of Gears</button></p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_19527">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+<div class="line number50 index49 alt1">50</div>
+<div class="line number51 index50 alt2">51</div>
+<div class="line number52 index51 alt1">52</div>
+<div class="line number53 index52 alt2">53</div>
+<div class="line number54 index53 alt1">54</div>
+<div class="line number55 index54 alt2">55</div>
+<div class="line number56 index55 alt1">56</div>
+<div class="line number57 index56 alt2">57</div>
+<div class="line number58 index57 alt1">58</div>
+<div class="line number59 index58 alt2">59</div>
+<div class="line number60 index59 alt1">60</div>
+<div class="line number61 index60 alt2">61</div>
+<div class="line number62 index61 alt1">62</div>
+<div class="line number63 index62 alt2">63</div>
+<div class="line number64 index63 alt1">64</div>
+<div class="line number65 index64 alt2">65</div>
+<div class="line number66 index65 alt1">66</div>
+<div class="line number67 index66 alt2">67</div>
+<div class="line number68 index67 alt1">68</div>
+<div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+<div class="line number72 index71 alt1">72</div>
+<div class="line number73 index72 alt2">73</div>
+<div class="line number74 index73 alt1">74</div>
+<div class="line number75 index74 alt2">75</div>
+<div class="line number76 index75 alt1">76</div>
+<div class="line number77 index76 alt2">77</div>
+<div class="line number78 index77 alt1">78</div>
+<div class="line number79 index78 alt2">79</div>
+<div class="line number80 index79 alt1">80</div>
+<div class="line number81 index80 alt2">81</div>
+<div class="line number82 index81 alt1">82</div>
+<div class="line number83 index82 alt2">83</div>
+<div class="line number84 index83 alt1">84</div>
+<div class="line number85 index84 alt2">85</div>
+<div class="line number86 index85 alt1">86</div>
+<div class="line number87 index86 alt2">87</div>
+<div class="line number88 index87 alt1">88</div>
+<div class="line number89 index88 alt2">89</div>
+<div class="line number90 index89 alt1">90</div>
+<div class="line number91 index90 alt2">91</div>
+<div class="line number92 index91 alt1">92</div>
+<div class="line number93 index92 alt2">93</div>
+<div class="line number94 index93 alt1">94</div>
+<div class="line number95 index94 alt2">95</div>
+<div class="line number96 index95 alt1">96</div>
+<div class="line number97 index96 alt2">97</div>
+<div class="line number98 index97 alt1">98</div>
+<div class="line number99 index98 alt2">99</div>
+<div class="line number100 index99 alt1">100</div>
+<div class="line number101 index100 alt2">101</div>
+<div class="line number102 index101 alt1">102</div>
+<div class="line number103 index102 alt2">103</div>
+<div class="line number104 index103 alt1">104</div>
+<div class="line number105 index104 alt2">105</div>
+<div class="line number106 index105 alt1">106</div>
+<div class="line number107 index106 alt2">107</div>
+<div class="line number108 index107 alt1">108</div>
+<div class="line number109 index108 alt2">109</div>
+<div class="line number110 index109 alt1">110</div>
+<div class="line number111 index110 alt2">111</div>
+<div class="line number112 index111 alt1">112</div>
+<div class="line number113 index112 alt2">113</div>
+<div class="line number114 index113 alt1">114</div>
+<div class="line number115 index114 alt2">115</div>
+<div class="line number116 index115 alt1">116</div>
+<div class="line number117 index116 alt2">117</div>
+<div class="line number118 index117 alt1">118</div>
+<div class="line number119 index118 alt2">119</div>
+<div class="line number120 index119 alt1">120</div>
+<div class="line number121 index120 alt2">121</div>
+<div class="line number122 index121 alt1">122</div>
+<div class="line number123 index122 alt2">123</div>
+<div class="line number124 index123 alt1">124</div>
+<div class="line number125 index124 alt2">125</div>
+<div class="line number126 index125 alt1">126</div>
+<div class="line number127 index126 alt2">127</div>
+<div class="line number128 index127 alt1">128</div>
+<div class="line number129 index128 alt2">129</div>
+<div class="line number130 index129 alt1">130</div>
+<div class="line number131 index130 alt2">131</div>
+<div class="line number132 index131 alt1">132</div>
+<div class="line number133 index132 alt2">133</div>
+<div class="line number134 index133 alt1">134</div>
+<div class="line number135 index134 alt2">135</div>
+<div class="line number136 index135 alt1">136</div>
+<div class="line number137 index136 alt2">137</div>
+<div class="line number138 index137 alt1">138</div>
+<div class="line number139 index138 alt2">139</div>
+<div class="line number140 index139 alt1">140</div>
+<div class="line number141 index140 alt2">141</div>
+<div class="line number142 index141 alt1">142</div>
+<div class="line number143 index142 alt2">143</div>
+<div class="line number144 index143 alt1">144</div>
+<div class="line number145 index144 alt2">145</div>
+<div class="line number146 index145 alt1">146</div>
+<div class="line number147 index146 alt2">147</div>
+<div class="line number148 index147 alt1">148</div>
+<div class="line number149 index148 alt2">149</div>
+<div class="line number150 index149 alt1">150</div>
+<div class="line number151 index150 alt2">151</div>
+<div class="line number152 index151 alt1">152</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">&lt;!-- 導入 Brython 標準程式庫 --&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">&lt;script src=</code><code class="js string">"./../cmsimde/static/brython.js"</code><code class="js plain">&gt;&lt;/script&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">&lt;script src=</code><code class="js string">"./../cmsimde/static/brython_stdlib.js"</code><code class="js plain">&gt;&lt;/script&gt;</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">&lt;p&gt;&lt;/p&gt;</code></div>
+<div class="line number5 index4 alt2"><code class="js plain">&lt;!-- 啟動 Brython --&gt;</code></div>
+<div class="line number6 index5 alt1"><code class="js plain">&lt;script&gt;</code></div>
+<div class="line number7 index6 alt2"><code class="js plain">window.onload=</code><code class="js keyword">function</code><code class="js plain">(){</code></div>
+<div class="line number8 index7 alt1"><code class="js comments">// 設定 data/py 為共用程式路徑</code></div>
+<div class="line number9 index8 alt2"><code class="js plain">brython({debug:1, pythonpath:[</code><code class="js string">'./../data/py'</code><code class="js plain">]});</code></div>
+<div class="line number10 index9 alt1"><code class="js plain">}</code></div>
+<div class="line number11 index10 alt2"><code class="js plain">&lt;/script&gt;</code></div>
+<div class="line number12 index11 alt1"><code class="js plain">&lt;p&gt;&lt;canvas height=</code><code class="js string">"600"</code> <code class="js plain">id=</code><code class="js string">"onegear"</code> <code class="js plain">width=</code><code class="js string">"800"</code><code class="js plain">&gt;&lt;/canvas&gt;&lt;/p&gt;</code></div>
+<div class="line number13 index12 alt2"><code class="js plain">&lt;!-- 以下製作 button--&gt;</code></div>
+<div class="line number14 index13 alt1"><code class="js plain">&lt;div height=</code><code class="js string">"20"</code> <code class="js plain">id=</code><code class="js string">"onegear_div"</code> <code class="js plain">width=</code><code class="js string">"800"</code><code class="js plain">&gt;&lt;/div&gt;</code></div>
+<div class="line number15 index14 alt2"><code class="js plain">&lt;p&gt;&lt;input id=</code><code class="js string">"n"</code> <code class="js plain">type=</code><code class="js string">"text"</code> <code class="js plain">value=</code><code class="js string">"22"</code><code class="js plain">&gt;&lt;br&gt; &lt;button id=</code><code class="js string">"button"</code><code class="js plain">&gt;Set Number of Gears&lt;/button&gt;&lt;/p&gt;</code></div>
+<div class="line number16 index15 alt1"><code class="js plain">&lt;!-- 以下實際利用  Brython 繪圖--&gt;</code></div>
+<div class="line number17 index16 alt2"><code class="js plain">&lt;script type=</code><code class="js string">"text/python3"</code><code class="js plain">&gt;</code></div>
+<div class="line number18 index17 alt1"><code class="js plain">from browser import document as doc</code></div>
+<div class="line number19 index18 alt2"><code class="js plain">import math</code></div>
+<div class="line number20 index19 alt1"><code class="js preprocessor"># deg 為角度轉為徑度的轉換因子</code></div>
+<div class="line number21 index20 alt2"><code class="js plain">deg = math.pi/180.</code></div>
+<div class="line number22 index21 alt1"><code class="js preprocessor"># 定義 Spur 類別</code></div>
+<div class="line number23 index22 alt2"><code class="js plain">class Spur(object):</code></div>
+<div class="line number24 index23 alt1"><code class="js spaces">    </code><code class="js plain">def __init__(self, ctx):</code></div>
+<div class="line number25 index24 alt2"><code class="js spaces">        </code><code class="js plain">self.ctx = ctx</code></div>
+<div class="line number26 index25 alt1"><code class="js spaces">  </code> </div>
+<div class="line number27 index26 alt2"><code class="js spaces">    </code><code class="js plain">def create_line(self, x1, y1, x2, y2, width=3, fill=</code><code class="js string">"red"</code><code class="js plain">):</code></div>
+<div class="line number28 index27 alt1"><code class="js spaces">        </code><code class="js plain">self.ctx.beginPath()</code></div>
+<div class="line number29 index28 alt2"><code class="js spaces">        </code><code class="js plain">self.ctx.lineWidth = width</code></div>
+<div class="line number30 index29 alt1"><code class="js spaces">        </code><code class="js plain">self.ctx.moveTo(x1, y1)</code></div>
+<div class="line number31 index30 alt2"><code class="js spaces">        </code><code class="js plain">self.ctx.lineTo(x2, y2)</code></div>
+<div class="line number32 index31 alt1"><code class="js spaces">        </code><code class="js plain">self.ctx.strokeStyle = fill</code></div>
+<div class="line number33 index32 alt2"><code class="js spaces">        </code><code class="js plain">self.ctx.stroke()</code></div>
+<div class="line number34 index33 alt1"><code class="js spaces">  </code> </div>
+<div class="line number35 index34 alt2"><code class="js spaces">    </code><code class="js preprocessor"># 定義一個繪正齒輪的繪圖函式</code></div>
+<div class="line number36 index35 alt1"><code class="js spaces">    </code><code class="js preprocessor"># midx 為齒輪圓心 x 座標</code></div>
+<div class="line number37 index36 alt2"><code class="js spaces">    </code><code class="js preprocessor"># midy 為齒輪圓心 y 座標</code></div>
+<div class="line number38 index37 alt1"><code class="js spaces">    </code><code class="js preprocessor"># rp 為節圓半徑, n 為齒數</code></div>
+<div class="line number39 index38 alt2"><code class="js spaces">    </code><code class="js preprocessor"># pa 為壓力角 (deg)</code></div>
+<div class="line number40 index39 alt1"><code class="js spaces">    </code><code class="js preprocessor"># rot 為旋轉角 (deg)</code></div>
+<div class="line number41 index40 alt2"><code class="js spaces">    </code><code class="js preprocessor"># 已經針對 n 大於等於 52 齒時的繪圖錯誤修正, 因為 base circle 與齒根圓大小必須進行判斷</code></div>
+<div class="line number42 index41 alt1"><code class="js spaces">    </code><code class="js plain">def Gear(self, midx, midy, rp, n=20, pa=20, color=</code><code class="js string">"black"</code><code class="js plain">):</code></div>
+<div class="line number43 index42 alt2"><code class="js spaces">        </code><code class="js preprocessor"># 齒輪漸開線分成 15 線段繪製</code></div>
+<div class="line number44 index43 alt1"><code class="js spaces">        </code><code class="js plain">imax = 15</code></div>
+<div class="line number45 index44 alt2"><code class="js spaces">        </code><code class="js preprocessor"># 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線</code></div>
+<div class="line number46 index45 alt1"><code class="js spaces">        </code><code class="js plain">self.create_line(midx, midy, midx, midy-rp)</code></div>
+<div class="line number47 index46 alt2"><code class="js spaces">        </code><code class="js preprocessor"># a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數</code></div>
+<div class="line number48 index47 alt1"><code class="js spaces">        </code><code class="js preprocessor"># 模數也就是齒冠大小</code></div>
+<div class="line number49 index48 alt2"><code class="js spaces">        </code><code class="js plain">a=2*rp/n</code></div>
+<div class="line number50 index49 alt1"><code class="js spaces">        </code><code class="js preprocessor"># d 為齒根大小, 為模數的 1.157 或 1.25倍, 這裡採 1.25 倍</code></div>
+<div class="line number51 index50 alt2"><code class="js spaces">        </code><code class="js plain">d=2.5*rp/n</code></div>
+<div class="line number52 index51 alt1"><code class="js spaces">        </code><code class="js preprocessor"># ra 為齒輪的外圍半徑</code></div>
+<div class="line number53 index52 alt2"><code class="js spaces">        </code><code class="js plain">ra=rp+a</code></div>
+<div class="line number54 index53 alt1"><code class="js spaces">        </code><code class="js preprocessor"># rb 則為齒輪的基圓半徑</code></div>
+<div class="line number55 index54 alt2"><code class="js spaces">        </code><code class="js preprocessor"># 基圓為漸開線長齒之基準圓</code></div>
+<div class="line number56 index55 alt1"><code class="js spaces">        </code><code class="js plain">rb=rp*math.cos(pa*deg)</code></div>
+<div class="line number57 index56 alt2"><code class="js spaces">        </code><code class="js preprocessor"># rd 為齒根圓半徑</code></div>
+<div class="line number58 index57 alt1"><code class="js spaces">        </code><code class="js plain">rd=rp-d</code></div>
+<div class="line number59 index58 alt2"><code class="js spaces">        </code><code class="js preprocessor"># 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd</code></div>
+<div class="line number60 index59 alt1"><code class="js spaces">        </code><code class="js preprocessor"># dr 則為基圓到齒頂圓半徑分成 imax 段後的每段半徑增量大小</code></div>
+<div class="line number61 index60 alt2"><code class="js spaces">        </code><code class="js preprocessor"># 將圓弧分成 imax 段來繪製漸開線</code></div>
+<div class="line number62 index61 alt1"><code class="js spaces">        </code><code class="js preprocessor"># 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd</code></div>
+<div class="line number63 index62 alt2"><code class="js spaces">        </code><code class="js keyword">if</code> <code class="js plain">rd&gt;rb:</code></div>
+<div class="line number64 index63 alt1"><code class="js spaces">            </code><code class="js plain">dr = (ra-rd)/imax</code></div>
+<div class="line number65 index64 alt2"><code class="js spaces">        </code><code class="js keyword">else</code><code class="js plain">:</code></div>
+<div class="line number66 index65 alt1"><code class="js spaces">            </code><code class="js plain">dr=(ra-rb)/imax</code></div>
+<div class="line number67 index66 alt2"><code class="js spaces">        </code><code class="js preprocessor"># tan(pa*deg)-pa*deg 為漸開線函數</code></div>
+<div class="line number68 index67 alt1"><code class="js spaces">        </code><code class="js plain">sigma=math.pi/(2*n)+math.tan(pa*deg)-pa*deg</code></div>
+<div class="line number69 index68 alt2"><code class="js spaces">        </code><code class="js keyword">for</code> <code class="js plain">j </code><code class="js keyword">in</code> <code class="js plain">range(n):</code></div>
+<div class="line number70 index69 alt1"><code class="js spaces">            </code><code class="js plain">ang=-2.*j*math.pi/n+sigma</code></div>
+<div class="line number71 index70 alt2"><code class="js spaces">            </code><code class="js plain">ang2=2.*j*math.pi/n+sigma</code></div>
+<div class="line number72 index71 alt1"><code class="js spaces">            </code><code class="js plain">lxd=midx+rd*math.sin(ang2-2.*math.pi/n)</code></div>
+<div class="line number73 index72 alt2"><code class="js spaces">            </code><code class="js plain">lyd=midy-rd*math.cos(ang2-2.*math.pi/n)</code></div>
+<div class="line number74 index73 alt1"><code class="js spaces">            </code><code class="js keyword">for</code> <code class="js plain">i </code><code class="js keyword">in</code> <code class="js plain">range(imax+1):</code></div>
+<div class="line number75 index74 alt2"><code class="js spaces">                </code><code class="js preprocessor"># 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd</code></div>
+<div class="line number76 index75 alt1"><code class="js spaces">                </code><code class="js keyword">if</code> <code class="js plain">rd&gt;rb:</code></div>
+<div class="line number77 index76 alt2"><code class="js spaces">                    </code><code class="js plain">r=rd+i*dr</code></div>
+<div class="line number78 index77 alt1"><code class="js spaces">                </code><code class="js keyword">else</code><code class="js plain">:</code></div>
+<div class="line number79 index78 alt2"><code class="js spaces">                    </code><code class="js plain">r=rb+i*dr</code></div>
+<div class="line number80 index79 alt1"><code class="js spaces">                </code><code class="js plain">theta=math.sqrt((r*r)/(rb*rb)-1.)</code></div>
+<div class="line number81 index80 alt2"><code class="js spaces">                </code><code class="js plain">alpha=theta-math.atan(theta)</code></div>
+<div class="line number82 index81 alt1"><code class="js spaces">                </code><code class="js plain">xpt=r*math.sin(alpha-ang)</code></div>
+<div class="line number83 index82 alt2"><code class="js spaces">                </code><code class="js plain">ypt=r*math.cos(alpha-ang)</code></div>
+<div class="line number84 index83 alt1"><code class="js spaces">                </code><code class="js plain">xd=rd*math.sin(-ang)</code></div>
+<div class="line number85 index84 alt2"><code class="js spaces">                </code><code class="js plain">yd=rd*math.cos(-ang)</code></div>
+<div class="line number86 index85 alt1"><code class="js spaces">                </code><code class="js preprocessor"># i=0 時, 繪線起點由齒根圓上的點, 作為起點</code></div>
+<div class="line number87 index86 alt2"><code class="js spaces">                </code><code class="js keyword">if</code><code class="js plain">(i==0):</code></div>
+<div class="line number88 index87 alt1"><code class="js spaces">                    </code><code class="js plain">last_x = midx+xd</code></div>
+<div class="line number89 index88 alt2"><code class="js spaces">                    </code><code class="js plain">last_y = midy-yd</code></div>
+<div class="line number90 index89 alt1"><code class="js spaces">                </code><code class="js preprocessor"># 由左側齒根圓作為起點, 除第一點 (xd,yd) 齒根圓上的起點外, 其餘的 (xpt,ypt)則為漸開線上的分段點</code></div>
+<div class="line number91 index90 alt2"><code class="js spaces">                </code><code class="js plain">self.create_line((midx+xpt),(midy-ypt),(last_x),(last_y),fill=color)</code></div>
+<div class="line number92 index91 alt1"><code class="js spaces">                </code><code class="js preprocessor"># 最後一點, 則為齒頂圓</code></div>
+<div class="line number93 index92 alt2"><code class="js spaces">                </code><code class="js keyword">if</code><code class="js plain">(i==imax):</code></div>
+<div class="line number94 index93 alt1"><code class="js spaces">                    </code><code class="js plain">lfx=midx+xpt</code></div>
+<div class="line number95 index94 alt2"><code class="js spaces">                    </code><code class="js plain">lfy=midy-ypt</code></div>
+<div class="line number96 index95 alt1"><code class="js spaces">                </code><code class="js plain">last_x = midx+xpt</code></div>
+<div class="line number97 index96 alt2"><code class="js spaces">                </code><code class="js plain">last_y = midy-ypt</code></div>
+<div class="line number98 index97 alt1"><code class="js spaces">            </code><code class="js preprocessor"># the line from last end of dedendum point to the recent</code></div>
+<div class="line number99 index98 alt2"><code class="js spaces">            </code><code class="js preprocessor"># end of dedendum point</code></div>
+<div class="line number100 index99 alt1"><code class="js spaces">            </code><code class="js preprocessor"># lxd 為齒根圓上的左側 x 座標, lyd 則為 y 座標</code></div>
+<div class="line number101 index100 alt2"><code class="js spaces">            </code><code class="js preprocessor"># 下列為齒根圓上用來近似圓弧的直線</code></div>
+<div class="line number102 index101 alt1"><code class="js spaces">            </code><code class="js plain">self.create_line((lxd),(lyd),(midx+xd),(midy-yd),fill=color)</code></div>
+<div class="line number103 index102 alt2"><code class="js spaces">            </code><code class="js keyword">for</code> <code class="js plain">i </code><code class="js keyword">in</code> <code class="js plain">range(imax+1):</code></div>
+<div class="line number104 index103 alt1"><code class="js spaces">                </code><code class="js preprocessor"># 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd</code></div>
+<div class="line number105 index104 alt2"><code class="js spaces">                </code><code class="js keyword">if</code> <code class="js plain">rd&gt;rb:</code></div>
+<div class="line number106 index105 alt1"><code class="js spaces">                    </code><code class="js plain">r=rd+i*dr</code></div>
+<div class="line number107 index106 alt2"><code class="js spaces">                </code><code class="js keyword">else</code><code class="js plain">:</code></div>
+<div class="line number108 index107 alt1"><code class="js spaces">                    </code><code class="js plain">r=rb+i*dr</code></div>
+<div class="line number109 index108 alt2"><code class="js spaces">                </code><code class="js plain">theta=math.sqrt((r*r)/(rb*rb)-1.)</code></div>
+<div class="line number110 index109 alt1"><code class="js spaces">                </code><code class="js plain">alpha=theta-math.atan(theta)</code></div>
+<div class="line number111 index110 alt2"><code class="js spaces">                </code><code class="js plain">xpt=r*math.sin(ang2-alpha)</code></div>
+<div class="line number112 index111 alt1"><code class="js spaces">                </code><code class="js plain">ypt=r*math.cos(ang2-alpha)</code></div>
+<div class="line number113 index112 alt2"><code class="js spaces">                </code><code class="js plain">xd=rd*math.sin(ang2)</code></div>
+<div class="line number114 index113 alt1"><code class="js spaces">                </code><code class="js plain">yd=rd*math.cos(ang2)</code></div>
+<div class="line number115 index114 alt2"><code class="js spaces">                </code><code class="js preprocessor"># i=0 時, 繪線起點由齒根圓上的點, 作為起點</code></div>
+<div class="line number116 index115 alt1"><code class="js spaces">                </code><code class="js keyword">if</code><code class="js plain">(i==0):</code></div>
+<div class="line number117 index116 alt2"><code class="js spaces">                    </code><code class="js plain">last_x = midx+xd</code></div>
+<div class="line number118 index117 alt1"><code class="js spaces">                    </code><code class="js plain">last_y = midy-yd</code></div>
+<div class="line number119 index118 alt2"><code class="js spaces">                </code><code class="js preprocessor"># 由右側齒根圓作為起點, 除第一點 (xd,yd) 齒根圓上的起點外, 其餘的 (xpt,ypt)則為漸開線上的分段點</code></div>
+<div class="line number120 index119 alt1"><code class="js spaces">                </code><code class="js plain">self.create_line((midx+xpt),(midy-ypt),(last_x),(last_y),fill=color)</code></div>
+<div class="line number121 index120 alt2"><code class="js spaces">                </code><code class="js preprocessor"># 最後一點, 則為齒頂圓</code></div>
+<div class="line number122 index121 alt1"><code class="js spaces">                </code><code class="js keyword">if</code><code class="js plain">(i==imax):</code></div>
+<div class="line number123 index122 alt2"><code class="js spaces">                    </code><code class="js plain">rfx=midx+xpt</code></div>
+<div class="line number124 index123 alt1"><code class="js spaces">                    </code><code class="js plain">rfy=midy-ypt</code></div>
+<div class="line number125 index124 alt2"><code class="js spaces">                </code><code class="js plain">last_x = midx+xpt</code></div>
+<div class="line number126 index125 alt1"><code class="js spaces">                </code><code class="js plain">last_y = midy-ypt</code></div>
+<div class="line number127 index126 alt2"><code class="js spaces">            </code><code class="js preprocessor"># lfx 為齒頂圓上的左側 x 座標, lfy 則為 y 座標</code></div>
+<div class="line number128 index127 alt1"><code class="js spaces">            </code><code class="js preprocessor"># 下列為齒頂圓上用來近似圓弧的直線</code></div>
+<div class="line number129 index128 alt2"><code class="js spaces">            </code><code class="js plain">self.create_line(lfx,lfy,rfx,rfy,fill=color)</code></div>
+<div class="line number130 index129 alt1"><code class="js plain">canvas = doc[</code><code class="js string">'onegear'</code><code class="js plain">]</code></div>
+<div class="line number131 index130 alt2"><code class="js plain">ctx = canvas.getContext(</code><code class="js string">"2d"</code><code class="js plain">)</code></div>
+<div class="line number132 index131 alt1"><code class="js spaces">  </code> </div>
+<div class="line number133 index132 alt2"><code class="js preprocessor"># 以 button 驅動的事件函式</code></div>
+<div class="line number134 index133 alt1"><code class="js plain">def setgearnumber(e):</code></div>
+<div class="line number135 index134 alt2"><code class="js spaces">    </code><code class="js plain">ctx.clearRect(0, 0, canvas.width, canvas.height)</code></div>
+<div class="line number136 index135 alt1"><code class="js spaces">    </code><code class="js plain">x = (canvas.width)/2</code></div>
+<div class="line number137 index136 alt2"><code class="js spaces">    </code><code class="js plain">y = (canvas.height)/2</code></div>
+<div class="line number138 index137 alt1"><code class="js spaces">    </code><code class="js keyword">if</code> <code class="js plain">doc[</code><code class="js string">"n"</code><code class="js plain">].value.isdigit():</code></div>
+<div class="line number139 index138 alt2"><code class="js spaces">        </code><code class="js plain">n1 = int(doc[</code><code class="js string">"n"</code><code class="js plain">].value)</code></div>
+<div class="line number140 index139 alt1"><code class="js spaces">    </code><code class="js keyword">else</code><code class="js plain">:</code></div>
+<div class="line number141 index140 alt2"><code class="js spaces">        </code><code class="js plain">n1= 25</code></div>
+<div class="line number142 index141 alt1"><code class="js spaces">    </code><code class="js preprocessor"># 設定齒輪參數</code></div>
+<div class="line number143 index142 alt2"><code class="js spaces">    </code><code class="js plain">x = (canvas.width)/2</code></div>
+<div class="line number144 index143 alt1"><code class="js spaces">    </code><code class="js plain">y = (canvas.height)/2</code></div>
+<div class="line number145 index144 alt2"><code class="js spaces">    </code><code class="js plain">r = 0.6*(canvas.height/2)</code></div>
+<div class="line number146 index145 alt1"><code class="js spaces">    </code><code class="js plain">pa = 20</code></div>
+<div class="line number147 index146 alt2"><code class="js spaces">    </code><code class="js preprocessor"># 繪出齒輪</code></div>
+<div class="line number148 index147 alt1"><code class="js spaces">    </code><code class="js plain">Spur(ctx).Gear(x, y, r, n1, pa, </code><code class="js string">"blue"</code><code class="js plain">)</code></div>
+<div class="line number149 index148 alt2"><code class="js preprocessor">#判定 button</code></div>
+<div class="line number150 index149 alt1"><code class="js plain">setgearnumber(True)</code></div>
+<div class="line number151 index150 alt2"><code class="js plain">doc[</code><code class="js string">'button'</code><code class="js plain">].bind(</code><code class="js string">'click'</code><code class="js plain">,setgearnumber)</code></div>
+<div class="line number152 index151 alt1"><code class="js plain">&lt;/script&gt;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Virtual Host</h1>
+<h2>架設虛擬主機</h2>
+<p><span>1.google輸入ubuntu &gt; 點選官網 &gt; 下載</span><span>ubuntu server</span><br/><span><br/></span><span></span><span>2.打開virtualbox &gt; New &gt; 輸入名子 &gt; 4096 MB</span><br/><span><br/></span><span></span><span>3.Cearte &gt; VMDK &gt; Dynamically &gt; 500.00 GB</span><br/><span><br/></span><span></span><span>4.Sttings &gt; Network &gt; bridged Adapter &gt; 進入網路中心</span><br/><br/><span>5.選擇電腦所使用的連接網路 &gt; ok &gt; Start</span><br/><span><br/></span><span></span><span>6.選取剛剛所下載的ubuntu &gt; 開始 &gt; 選取語言</span><br/><br/><span>7.Enter &gt; </span><span>Enter &gt; 輸入proxy :http://140.130.17.3:3128</span><br/><span><br/></span><span></span><span>8.</span><span>Enter</span><span> &gt; </span><span>Enter</span><span> &gt; </span><span>Enter</span><span> &gt; continue &gt; 全部都打一樣的</span><br/><span><br/></span><span></span><span>9.space &gt; </span><span>Enter</span><span> &gt; </span><span>Enter</span><span> &gt; 再輸入帳密 &gt; 即可開始設定</span><br/><br/><span>10.<span> 輸入</span><span>sudo apt install uwsgi 來安裝uwsgi</span></span></p>
+<p></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZtOK_dafs50" width="560"></iframe></p>
 <h1>期末報告</h1>
 <p><strong></strong></p>
 <!-- for Brython -->
