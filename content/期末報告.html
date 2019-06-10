@@ -136,7 +136,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='網路連線設定.html'>網路連線設定</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a><li><a href='建立Git倉儲.html'>建立Git倉儲</a><li><a href='Git指令.html'>Git指令</a><li><a href='建立Github Pages.html'>建立Github Pages</a><li><a href='管理網站內容.html'>管理網站內容</a><li><a href='靜態 CMSimfly.html'>靜態 CMSimfly</a><li class='has-children'><a href='Javascript.html'>Javascript</a><ul class='dropdown'><li><a href='first.html'>first</a><li><a href='canvas.html'>canvas</a><li><a href='國旗.html'>國旗</a><li><a href='國旗-2.html'>國旗-2</a><li><a href='Spur Gear1.html'>Spur Gear1</a></li></ul><li><a href='解決問題.html'>解決問題</a><li class='has-children'><a href='Virtual Host.html'>Virtual Host</a><ul class='dropdown'><li><a href='架設虛擬主機.html'>架設虛擬主機</a></li></ul><li><a href='其中影片.html'>其中影片</a><li><a href='期末報告.html'>期末報告</a></li>
+                     <li><a href='網路連線設定.html'>網路連線設定</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a><li><a href='建立Git倉儲.html'>建立Git倉儲</a><li><a href='Git指令.html'>Git指令</a><li><a href='建立Github Pages.html'>建立Github Pages</a><li><a href='靜態 CMSimfly.html'>靜態 CMSimfly</a><li class='has-children'><a href='Javascript.html'>Javascript</a><ul class='dropdown'><li><a href='first.html'>first</a><li><a href='canvas.html'>canvas</a><li><a href='國旗.html'>國旗</a><li><a href='國旗-2.html'>國旗-2</a><li><a href='Spur Gear1.html'>Spur Gear1</a></li></ul><li><a href='解決問題.html'>解決問題</a><li class='has-children'><a href='Virtual Host.html'>Virtual Host</a><ul class='dropdown'><li><a href='架設虛擬主機.html'>架設虛擬主機</a></li></ul><li><a href='期中影片.html'>期中影片</a><li><a href='期末報告.html'>期末報告</a></li>
                       </ul>
                 </nav>
               </div>
@@ -147,7 +147,7 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">其中影片 << <a href='其中影片.html'>Previous</a> <br /><h1>期末報告</h1>
+    <div id="tipue_search_content">期中影片 << <a href='期中影片.html'>Previous</a> <br /><h1>期末報告</h1>
 <p><strong></strong></p>
 <!-- for Brython -->
 <script src="/get_page/static/brython.js"></script>
@@ -217,75 +217,8 @@ ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
 </p>
-<p>上述國旗繪圖程式碼:</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- for Brython --&gt;
-&lt;script src="./../static/brython.js"&gt;&lt;/script&gt;
-&lt;script src="./../static/brython_stdlib.js"&gt;&lt;/script&gt;
-&lt;!-- 啟動 brython() --&gt;
-&lt;p&gt;
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-&lt;/p&gt;
-&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
-&lt;p&gt;&lt;canvas height="400" id="taiwan_flag" width="600"&gt;&lt;/canvas&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;script type="text/python3"&gt;
-# 導入 doc
-from browser import document as doc
-import math
- 
-# 準備繪圖畫布
-canvas = doc["taiwan_flag"]
-ctx = canvas.getContext("2d")
-# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
-# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
-# 以下採用 canvas 原始座標繪圖
-flag_w = canvas.width
-flag_h = canvas.height
-circle_x = flag_w/4
-circle_y = flag_h/4
-# 先畫滿地紅
-ctx.fillStyle='rgb(255, 0, 0)'
-ctx.fillRect(0,0,flag_w,flag_h)
-# 再畫青天
-ctx.fillStyle='rgb(0, 0, 150)'
-ctx.fillRect(0,0,flag_w/2,flag_h/2)
-# 畫十二道光芒白日
-ctx.beginPath()
-star_radius = flag_w/8
-angle = 0
-for i in range(24):
-    angle += 5*math.pi*2/12
-    toX = circle_x + math.cos(angle)*star_radius
-    toY = circle_y + math.sin(angle)*star_radius
-    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
-    if (i):
-        ctx.lineTo(toX, toY)
-    else:
-        ctx.moveTo(toX, toY)
-ctx.closePath()
-# 將填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-# 白日:藍圈
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為藍色
-ctx.fillStyle = 'rgb(0, 0, 149)'
-ctx.fill()
-# 白日:白心
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-&lt;/script&gt;</pre>
-<p></p><br />其中影片 << <a href='其中影片.html'>Previous</a> </div>
+<p></p>
+<p></p><br />期中影片 << <a href='期中影片.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
