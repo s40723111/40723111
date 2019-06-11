@@ -385,7 +385,76 @@ brython(1);
 </p>
 <!-- 以下利用 Brython 程式執行繪圖 -->
 <p><canvas height="400" id="taiwan_flag" width="600">&lt;!-- for Brython --&gt;<br/>&lt;script src="/static/brython.js"&gt;&lt;/script&gt;<br/>&lt;script src="/static/brython_stdlib.js"&gt;&lt;/script&gt;<br/>&lt;!-- 啟動 brython() --&gt;<br/>&lt;p&gt;<br/>&lt;script&gt;// &lt;![CDATA[<br/>window.onload=function(){<br/>brython(1);<br/>}<br/>// ]]&gt;&lt;/script&gt;<br/>&lt;/p&gt;<br/>&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;<br/>&lt;p&gt;&lt;canvas height="400" id="taiwan_flag" width="600"&gt;&lt;/canvas&gt;&lt;/p&gt;<br/>&lt;p&gt;<br/>&lt;script type="text/python3"&gt;// &lt;![CDATA[<br/># 導入 doc<br/>from browser import document as doc<br/>import math<br/> <br/># 準備繪圖畫布<br/>canvas = doc["taiwan_flag"]<br/>ctx = canvas.getContext("2d")<br/># 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點<br/># ctx.setTransform(1, 0, 0, -1, 0, canvas.height)<br/># 以下採用 canvas 原始座標繪圖<br/>flag_w = canvas.width<br/>flag_h = canvas.height<br/>circle_x = flag_w/2<br/>circle_y = flag_h/2<br/># 先畫滿地青天<br/>ctx.fillStyle='#00FFFF'<br/>ctx.fillRect(0,0,flag_w,flag_h)<br/># 再畫紫天<br/>ctx.fillStyle='#9400D3'<br/>ctx.fillRect(flag_w/3,flag_h/4,200,200)<br/># 畫十二道光芒白日<br/>ctx.beginPath()<br/>star_radius = flag_w/8<br/>angle = 0<br/>for i in range(24):<br/> angle += 5*math.pi*2/12<br/> toX = circle_x + math.cos(angle)*star_radius<br/> toY = circle_y + math.sin(angle)*star_radius<br/> # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo<br/> if (i):<br/> ctx.lineTo(toX, toY)<br/> else:<br/> ctx.moveTo(toX, toY)<br/>ctx.closePath()<br/># 將填色設為白色<br/>ctx.fillStyle = '#fff'<br/>ctx.fill()<br/># 白日:藍圈<br/>ctx.beginPath()<br/>ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)<br/>ctx.closePath()<br/># 填色設為綠色<br/>ctx.fillStyle = '#00FF7F'<br/>ctx.fill()<br/># 白日:白心<br/>ctx.beginPath()<br/>ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)<br/>ctx.closePath()<br/># 填色設為白色<br/>ctx.fillStyle = '#fff'<br/>ctx.fill()<br/>// ]]&gt;&lt;/script&gt;<br/>&lt;/p&gt;</canvas></p>
-<p></p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- for Brython --&gt;
+&lt;script src="/static/brython.js"&gt;&lt;/script&gt;
+&lt;script src="/static/brython_stdlib.js"&gt;&lt;/script&gt;
+&lt;!-- 啟動 brython() --&gt;
+&lt;p&gt;
+&lt;script&gt;// &lt;![CDATA[
+window.onload=function(){
+brython(1);
+}
+// ]]&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;p&gt;&lt;canvas height="400" id="taiwan_flag" width="600"&gt;&lt;!-- for Brython --&gt;&lt;br&gt;&lt;script src="/static/brython.js"&gt;&lt;/script&gt;&lt;br&gt;&lt;script src="/static/brython_stdlib.js"&gt;&lt;/script&gt;&lt;br&gt;&lt;!-- 啟動 brython() --&gt;&lt;br&gt;&lt;p&gt;&lt;br&gt;&lt;script&gt;// &lt;![CDATA[&lt;br&gt;window.onload=function(){&lt;br&gt;brython(1);&lt;br&gt;}&lt;br&gt;// ]]&gt;&lt;/script&gt;&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;&lt;br&gt;&lt;p&gt;&lt;canvas height="400" id="taiwan_flag" width="600"&gt;&lt;/canvas&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;br&gt;&lt;script type="text/python3"&gt;// &lt;![CDATA[&lt;br&gt;# 導入 doc&lt;br&gt;from browser import document as doc&lt;br&gt;import math&lt;br&gt; &lt;br&gt;# 準備繪圖畫布&lt;br&gt;canvas = doc["taiwan_flag"]&lt;br&gt;ctx = canvas.getContext("2d")&lt;br&gt;# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點&lt;br&gt;# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)&lt;br&gt;# 以下採用 canvas 原始座標繪圖&lt;br&gt;flag_w = canvas.width&lt;br&gt;flag_h = canvas.height&lt;br&gt;circle_x = flag_w/2&lt;br&gt;circle_y = flag_h/2&lt;br&gt;# 先畫滿地青天&lt;br&gt;ctx.fillStyle='#00FFFF'&lt;br&gt;ctx.fillRect(0,0,flag_w,flag_h)&lt;br&gt;# 再畫紫天&lt;br&gt;ctx.fillStyle='#9400D3'&lt;br&gt;ctx.fillRect(flag_w/3,flag_h/4,200,200)&lt;br&gt;# 畫十二道光芒白日&lt;br&gt;ctx.beginPath()&lt;br&gt;star_radius = flag_w/8&lt;br&gt;angle = 0&lt;br&gt;for i in range(24):&lt;br&gt; angle += 5*math.pi*2/12&lt;br&gt; toX = circle_x + math.cos(angle)*star_radius&lt;br&gt; toY = circle_y + math.sin(angle)*star_radius&lt;br&gt; # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo&lt;br&gt; if (i):&lt;br&gt; ctx.lineTo(toX, toY)&lt;br&gt; else:&lt;br&gt; ctx.moveTo(toX, toY)&lt;br&gt;ctx.closePath()&lt;br&gt;# 將填色設為白色&lt;br&gt;ctx.fillStyle = '#fff'&lt;br&gt;ctx.fill()&lt;br&gt;# 白日:藍圈&lt;br&gt;ctx.beginPath()&lt;br&gt;ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)&lt;br&gt;ctx.closePath()&lt;br&gt;# 填色設為綠色&lt;br&gt;ctx.fillStyle = '#00FF7F'&lt;br&gt;ctx.fill()&lt;br&gt;# 白日:白心&lt;br&gt;ctx.beginPath()&lt;br&gt;ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)&lt;br&gt;ctx.closePath()&lt;br&gt;# 填色設為白色&lt;br&gt;ctx.fillStyle = '#fff'&lt;br&gt;ctx.fill()&lt;br&gt;// ]]&gt;&lt;/script&gt;&lt;br&gt;&lt;/p&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;script type="text/python3"&gt;// &lt;![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+   
+# 準備繪圖畫布
+canvas = doc["taiwan_flag"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地青天
+ctx.fillStyle='#00FFFF'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫紫天
+ctx.fillStyle='#9400D3'
+ctx.fillRect(flag_w/3,flag_h/4,200,200)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為綠色
+ctx.fillStyle = '#00FF7F'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+// ]]&gt;&lt;/script&gt;
+&lt;/p&gt;</pre>
+<p><br/><br/></p>
 <p>
 <script type="text/python3">
 # 導入 doc
@@ -440,8 +509,7 @@ ctx.closePath()
 ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
-</p>
-<h2>Spur Gear1</h2>
+</p><h2>Spur Gear1</h2>
 <!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
